@@ -320,7 +320,7 @@
   <!-- ─────────────────────────────────────────
        SEÇÃO 8 · OFERTA ESPECIAL
   ───────────────────────────────────────── -->
-  <section class="offer-section" id="s8-oferta">
+  <section class="offer-section" id="oferta-upsell">
     <div class="container narrow">
 
       <div class="offer-badge">Oferta exclusiva para novas leitoras</div>
@@ -350,16 +350,40 @@
           <span>Garantia de satisfação · Sem risco</span>
         </div>
 
-        <a href="#" id="btn-sim-upsell" class="btn-primary">
-          Quero identificar meu ciclo invisível
-          <span class="btn-arrow">→</span>
-        </a>
-        <p style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); text-align: center; margin-top: 12px; margin-bottom: 4px;">Seu acesso será organizado dentro do Portal Código da Saciedade.</p>
-        <p style="font-size: 0.8rem; color: var(--text-soft); text-align: center; margin-top: 0px;">O módulo será liberado dentro do Portal a partir do 8º dia da sua Jornada, para que você aproveite primeiro o conteúdo principal e depois aprofunde seus padrões pessoais.</p>
-
-        <a href="#" id="btn-nao-upsell" class="btn-secondary" style="margin-top: 24px;">
-          Não, obrigado. Quero continuar apenas com a Jornada principal.
-        </a>
+        <!-- BOTÃO OFICIAL KIWIFY — IDs únicos, não duplicar em outro ponto da página -->
+        <div style="text-align:center" id="kiwify-upsell-TkVbZxu" data-upsell-url="https://codigo-da-saciedade-upsell.vercel.app/obrigado" data-downsell-url="https://fome-de-alma.vercel.app/" >
+          <button id="kiwify-upsell-trigger-TkVbZxu" style="
+            background: linear-gradient(135deg, #d8b45c 0%, #f2d98b 45%, #b88a2e 100%);
+            padding: 18px 34px;
+            cursor: pointer;
+            color: #090914;
+            font-weight: 800;
+            border-radius: 999px;
+            border: 1px solid #f2d98b;
+            font-size: 18px;
+            line-height: 1.35;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            box-shadow: 0 14px 34px rgba(216, 180, 92, 0.28);
+            max-width: 100%;
+            width: min(560px, 100%);
+            font-family: Arial, sans-serif;
+          ">
+            Sim, quero adicionar Os 9 Ciclos Invisíveis por R$ 27
+          </button>
+          <div id="kiwify-upsell-cancel-trigger-TkVbZxu" style="
+            margin-top: 1.2rem;
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 1.5;
+            text-decoration: underline;
+            font-family: Arial, sans-serif;
+            color: #d9d9e8;
+            opacity: 0.88;
+          ">
+            Não, obrigado. Quero continuar apenas com a Jornada principal.
+          </div>
+        </div>
       </div>
 
     </div>
@@ -417,16 +441,12 @@
         </p>
       </div>
 
-      <a href="#" id="btn-final-cta" class="btn-primary large">
+      <!-- CTA final → ancora até o botão oficial Kiwify -->
+      <a href="#oferta-upsell" class="btn-primary large" id="btn-final-cta">
         QUERO IDENTIFICAR MEU CICLO INVISÍVEL
         <span class="btn-arrow">→</span>
       </a>
-      <p style="font-size: 0.85rem; font-weight: 500; color: var(--text-primary); text-align: center; margin-top: 16px; margin-bottom: 4px;">Seu acesso será organizado dentro do Portal Código da Saciedade.</p>
-      <p style="font-size: 0.8rem; color: var(--text-soft); text-align: center; margin-top: 0px; margin-bottom: 24px;">O módulo será liberado dentro do Portal a partir do 8º dia da sua Jornada, para que você aproveite primeiro o conteúdo principal e depois aprofunde seus padrões pessoais.</p>
-
-      <a href="#" id="btn-final-skip" class="btn-secondary">
-        Não, obrigada. Quero continuar apenas com a Jornada principal.
-      </a>
+      <p style="font-size: 0.85rem; font-weight: 500; color: var(--text-mid); text-align: center; margin-top: 16px; margin-bottom: 24px;">Clique acima e veja a oferta completa antes de decidir.</p>
 
     </div>
   </section>
@@ -443,5 +463,6 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="https://snippets.kiwify.com/upsell/upsell.min.js"></script>
 </body>
 </html>

@@ -21,32 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
-  document.addEventListener('animationframe', () => {});
-
   // Add .visible to trigger transitions
   const style = document.createElement('style');
   style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
   document.head.appendChild(style);
 
-  /* ── Smooth pulse on CTA buttons ── */
+  /* ── Smooth pulse on btn-primary (hover only — não interfere com Kiwify) ── */
   document.querySelectorAll('.btn-primary').forEach(btn => {
     btn.addEventListener('mouseenter', () => {
       btn.style.letterSpacing = '0.12em';
     });
     btn.addEventListener('mouseleave', () => {
       btn.style.letterSpacing = '0.08em';
-    });
-  });
-
-  /* ── Skip link confirmation ── */
-  document.querySelectorAll('.btn-secondary').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const confirmed = confirm('Tem certeza? Esta oferta exclusiva só aparece agora.');
-      if (confirmed) {
-        // Redirect to the thank you / access page
-        window.location.href = '#acesso';
-      }
     });
   });
 
