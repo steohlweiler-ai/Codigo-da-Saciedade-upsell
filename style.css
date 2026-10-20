@@ -472,6 +472,17 @@ a { text-decoration: none; color: inherit; }
   border: 1px solid var(--cream-dark); border-radius: var(--radius-pill);
   padding: 8px 20px;
 }
+.gift-teaser {
+  width: 100%;
+  max-width: 620px;
+  padding: 15px 20px;
+  border: 1px solid rgba(184,147,90,.35);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(184,147,90,.10), rgba(74,124,63,.08));
+  text-align: center;
+}
+.gift-teaser span { display: block; margin-bottom: 5px; color: var(--gold); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.gift-teaser strong { color: var(--green-deep); font-size: .9rem; font-weight: 500; line-height: 1.55; }
 
 /* ===== BUTTONS ===== */
 .btn-primary {
